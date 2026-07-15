@@ -1,0 +1,37 @@
+{
+  "order_database": {
+    "ORD-1001": { "status": "Shipped" },
+    "ORD-1002": { "status": "Processing" },
+    "ORD-1003": { "status": "Delivered" },
+    "ORD-1004": { "status": "Cancelled" },
+    "ORD-1005": { "status": "Out for Delivery" }
+  },
+
+  "delivery_charge_rules": {
+    "Premium": {
+      "minimum_free_delivery_amount": 0,
+      "delivery_charge": 0
+    },
+    "Standard": {
+      "minimum_free_delivery_amount": 2000,
+      "delivery_charge_below_minimum": 100,
+      "delivery_charge_above_minimum": 0
+    }
+  },
+
+  "shipping_options": {
+    "Standard": "3-5 business days",
+    "Express": "1-2 business days",
+    "Same Day": "Same day"
+  },
+
+  "discount_rules": {
+    "minimum_discount_percent": 0,
+    "maximum_discount_percent": 100,
+    "minimum_price": 0
+  },
+
+  "supported_customer_types": ["Premium", "Standard"],
+
+  "supported_shipping_types": ["Standard", "Express", "Same Day"]
+}
